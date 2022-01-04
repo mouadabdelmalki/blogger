@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteCond %{HTTPS} !=on
+RewriteRule .*https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteRule ^index index.php
+RewriteRule ^about about.php
+RewriteRule ^blogs Blog.php
+RewriteRule ^contact contact-page.php
+RewriteRule ^article* single-post.php
+
+
+ErrorDocument 404 /page-notfound.php
+
+#directoryIndex index.html
+</IfModule>

@@ -1,0 +1,2 @@
+[30-May-2019 17:05:04 Europe/Paris] PHP Warning:  rename(../../../images/blog/bg.png,../../../images/blog/archive-blog/bg.png): No such file or directory in /home/croncfyr/almourchid.ma/admin/app/actualites/articles_archives.php on line 23
+[30-May-2019 17:05:04 Europe/Paris] PHP Warning:  rename(../../../images/blog/min/49169666_2428273623854145_5274091175152713728_n.jpg,../../../images/blog/archive-blog/min/49169666_2428273623854145_5274091175152713728_n.jpg): No such file or directory in /home/croncfyr/almourchid.ma/admin/app/actualites/articles_archives.php on line 29

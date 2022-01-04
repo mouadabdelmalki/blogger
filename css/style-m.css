@@ -1,0 +1,182 @@
+.rate {
+    /* float: left; */
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+.rate:not(:checked) > label {
+    /* float: right; */
+    width: 19px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* cursor: pointer; */
+    font-size: 24px;
+    color: #ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+/* .rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+} */
+/* .rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+} */
+
+.valigne{
+    display: flex;
+    align-items: center
+}
+.slide-content{
+    padding: 20px
+}
+.slide-content span{
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin: 8px 2px;
+}
+.slide-content h2{
+    margin : 20px 2px
+}
+.slide-content p{
+    margin : 20px 2px
+}
+.slide-content p a{
+    padding: 7px 18px;
+    color: white !important;
+    background-color: #3B6998;
+     /*border-radius: 10px;*/
+}
+.slide-content p a:hover{
+   
+    text-decoration-line: none;
+}
+.modal img{
+   
+        opacity: 0.5;
+}
+.modal input{
+    border-radius: 6px;
+    width: 100%;
+    height: 52px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #slide {
+
+      margin-bottom: 44px!important;
+      width: 96%;
+    margin: auto;
+  }
+  #contact{
+      width:96%;
+      margin:auto
+  }
+  #contactAccroche{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold
+  }
+  #contactAccroche span{
+      font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+    margin-right:20px
+  }
+   #adresse2-form{
+    
+    display:none
+  } 
+  #adresse2-form fieldset{
+        border:2px #007BFF solid;
+        padding:14px
+} 
+  #adresse2-form legend{
+      cursor: pointer;
+    width: auto;
+    text-align: right
+} 
+#adresse2-form legend:hover{
+font-weight: bold
+} 
+  #verifierFormulaire{
+      width: 90%;
+      margin:auto
+  }
+ #messageEnvoye{
+    width: 90%;
+    margin:auto;display:none
+}
+ #afficherAdrs2{
+     margin-top: 20px;
+     margin-bottom: 20px;
+    width: 90%;
+    margin:auto
+}
+  #afficherAdrs2 a{
+      font-size: 1.2em;
+    cursor: pointer
+    ;
+  }
+  #afficherAdrs2 a:hover{
+      font-weight: bold;
+      text-decoration-line: none  }
+      button {
+          cursor :pointer !important ; 
+      }
+#infoContact{
+    margin-top:16px;
+    margin-bottom:16px;
+    display:flex;
+    align-items: center;
+
+    font-weight: bold;
+    
+    font-size:18px
+}
+#adresse span,#infoContact span{
+    margin-top: 10px;
+    font-weight: unset;
+    display: block;
+    font-size:16px
+}
+#adresse{
+    display:flex;
+    align-items: center;
+
+    font-weight: bold;
+    
+    font-size:18px;
+    background-color: #e2e0e0;
+    padding-top:12px;
+    padding-bottom:12px;
+    margin-top:12px;
+    width:98%;
+    margin:auto
+}
+#carte img{
+    opacity: 1 !important;
+}
+#carte .modal-body{
+    background-color: #E9ECEF!important
+}
+iframeme{
+    width: 100%!important;
+}

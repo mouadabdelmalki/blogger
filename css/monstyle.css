@@ -1,0 +1,35 @@
+
+#msg{
+    font-family: auto;
+    font-size: 17px;
+    line-height: 25px;
+    color: #000;
+
+}
+
+#cadre{
+    margin: 15px;
+}
+#formula{
+    width: 100%;
+}
+
+/*a.disabled {*/
+/*pointer-events: none;*/
+/*!*cursor: default;*!*/
+/*}*/
+
+
+.redborder
+{
+    border-left: solid 3px red;
+}
+.redborder1
+{
+    border-left: solid 3px green;
+}
+
+#outputtitleseo{
+    color: blue;
+    font-size: 25px;
+}

@@ -1,0 +1,26 @@
+
+#etoileCochee::before {
+    content: '★';
+    color: #ffc700;
+    font-size: 24px;
+  }
+#etoileNonCochee::before {
+    content: '★';
+    color: #ccc;
+    font-size: 24px;
+  }
+  @media only screen and (min-width: 992px)
+  {
+       #valign {
+      align-items: center;
+      display: flex;
+  }
+  }
+ 
+
+  .gestion-avis a{
+    margin-left:10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 8px
+  }
