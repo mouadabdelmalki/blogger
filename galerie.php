@@ -68,43 +68,24 @@ $i=1;
 					';
 					    }  ?>
 				</div>
-				<div class="center-button">
+				<!-- <div class="center-button">
 					<a href="#" class="button-one">Load More</a>
-				</div>
+				</div> -->
 			</div>
 		</section>
 		<!-- End portfolio section -->
 
 		<!-- footer 
 			================================================== -->
-		<footer>
-			<ul class="social-icons">
-				<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-				<li><a class="github" href="#"><i class="fa fa-github-alt"></i></a></li>
-			</ul>
-			<p>
-				<span>587 Str. Norman Crook, New York, USA</span>
-				<span>(414) 757-885</span>
-				<span>info@yourdomain.com</span>
-			</p>
-			<p class="copyright-line">2018 CVbuilder. &copy; All Rights Reserved Nunforest</p>
-			<a href="#" class="go-top">
-				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-			</a>
-		</footer>
+		<?php include 'footer.php' ?>
 		<!-- End footer -->
 
 	</div>
 	<!-- End Container -->
 	
-	<script src="js/cvbuilder-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI&amp;sensor=false&amp;language=en" type="text/javascript"></script>
-	<script src="js/gmap3.min.js"></script>
-	<script src="js/script.js"></script>
+	<!--javascript link front-->
+	<?php include 'javascript.php' ?>
+    <!-- End javascript link front -->
 
 	
 </body>

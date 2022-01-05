@@ -13,7 +13,7 @@ $cmnt = mysqli_num_rows($commentaireNbr) ;
 //articles//
 $article= mysqli_query($connect,"select * from actualites where url='".$iden."'");
 $art=mysqli_fetch_array($article);
-$src = "upload/blog/".($art["image_contenu"] ? $art["image_contenu"] : "default-header.jpg");
+$src = "images/blog/".($art["image_contenu"] ? $art["image_contenu"] : "default-header.jpg");
 ?>
 <?php
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
@@ -58,7 +58,7 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 			<div class="container">
 				<div class="blog-box single-post">
 				<?php 
-				if(!file_exists($src)) $src =  "upload/blog/default-header.jpg";
+				if(!file_exists($src)) $src =  "images/blog/default-header.jpg";
 				echo '
 
 					<div class="blog-post">
@@ -181,12 +181,8 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 	</div>
 	<!-- End Container -->
 	
-	<script src="js/cvbuilder-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI&amp;sensor=false&amp;language=en" type="text/javascript"></script>
-	<script src="js/gmap3.min.js"></script>
-	<script src="js/script.js"></script>
-	
+<!--javascript link front-->
+<?php include 'javascript.php' ?>
+    <!-- End javascript link front -->
 </body>
 </html>

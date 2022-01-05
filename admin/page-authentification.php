@@ -31,7 +31,7 @@ $error=isset($_GET['error']) ? $_GET['error']:'';
     <div class="signpanel-wrapper">
       <div class="signbox">
         <div class="signbox-header">
-          <h4>Dr Najib Moussa</h4>
+          <h4>BLOGGER</h4>
           <p class="mg-b-0">Authentification</p>
         </div><!-- signbox-header -->
         <div class="signbox-body">

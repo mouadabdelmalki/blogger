@@ -4,18 +4,28 @@
                 <div class="container">
 
                     <a href="#" class="open-menu"><i class="fa fa-align-justify"></i></a>
-
-                    <a class="navbar-brand m-auto" href="index.php">
-                        <!-- <img src="images/logo.png" alt=""> -->
-                        <span class="title-logo">BLLOGER</span>
-                    </a>
-                    <div>
-                    <ul class="social-icons-header">
+                    <ul class="social-icons-header" style="margin: 0;">
                         <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
                         <li><a class="github" href="#"><i class="fa fa-github-alt"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a class="skype" href="#"><i class="fa fa-skype"></i></a></li>
+                        <li><a class="github" href="#"><i class="fa fa-flex"></i></a></li>
                     </ul>
+                    <a class="navbar-brand m-auto" href="index.php">
+                        <!-- <img src="images/logo.png" alt=""> -->
+                        <span class="title-logo">BLLOGER</span>
+                    </a>
+                    <ul class="navbar-link-header" style="margin: 0;">
+                        <li><a class="active" href="index.php">ACCUEIL</a></li>
+                        <li><a href="galerie.php">GALERIE</a></li>
+                        <li><a href="blog.php">BLOG</a></li>
+                        <li><a href="contact-page.php">CONTACT</a></li>
+                    </ul>
+                    <div>
+                   
                     </div>
                     <!-- <a href="#" class="open-search"><i class="fa fa-search"></i></a> -->
 

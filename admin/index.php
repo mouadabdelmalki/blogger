@@ -13,7 +13,7 @@ require_once 'url.php';
   <!-- Meta -->
   <meta name="description" content="Actualités Dr Moussa">
 
-  <title>Dr Moussa : Gestion des actualités</title>
+  <title>BLOGGER : Gestion des actualités</title>
 
   <!-- vendor css -->
   <link rel="icon" href="../images/logo.jpg">

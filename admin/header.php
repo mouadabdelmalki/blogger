@@ -54,16 +54,15 @@
          </ul>
         </li> 
         
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="<?=$url?>admin/rdv/liste_rdv.php" class="nav-link"><i class="fa fa-calendar"></i><span>Gestion des rendez-vous</span>
             </a>
-        </li>
+        </li> -->
          <li class="nav-item">
             <a href="<?=$url?>admin/actualites/liste-commentaire.php" class="nav-link"><i class="fa fa-comments"></i><span>Gestion des commentaires</span>
             </a>
         </li>
-     
-       
+
         <?php
         if ($profil =='admin'){
             ?>

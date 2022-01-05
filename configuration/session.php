@@ -33,8 +33,8 @@ $emailuser=$requset['Mail'];
    }
    elseif ($password!==$passworduser|| $login!==$loginuser &&  $login!==$emailuser){
 
-    //  header('location: ../admin/page-authentification.php?error=3$password=' .$password);
-     header('location: ../admin/index.php');
+     header('location: ../admin/page-authentification.php?error=3$password=' .$password);
+     //header('location: ../admin/index.php');
 
 
    }

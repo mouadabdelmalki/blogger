@@ -141,9 +141,9 @@ while ($R=mysqli_fetch_array($categories))
 
 					$catName = array_key_exists("_categorie", $R) ?  $R["_categorie"]["libelle"] : "Santé";
 
-					$src = "upload/blog/".($R["image_contenu"] ? $R["image_contenu"] : "default-header.jpg");
+					$src = "images/blog/".($R["image_contenu"] ? $R["image_contenu"] : "default-header.jpg");
 
-					if(!file_exists($src)) $src =  "upload/blog/default-header.jpg";
+					if(!file_exists($src)) $src =  "images/blog/default-header.jpg";
 
 
 					echo'
@@ -203,14 +203,11 @@ while ($R=mysqli_fetch_array($categories))
 
 	</div>
 	<!-- End Container -->
-	
-	<script src="js/cvbuilder-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI&amp;sensor=false&amp;language=en" type="text/javascript"></script>
-	<script src="js/gmap3.min.js"></script>
-	<script src="js/script.js"></script>
 
-	
+	<!--javascript link front-->
+	<?php include 'javascript.php' ?>
+    <!-- End javascript link front -->
+
+
 </body>
 </html>
