@@ -10,7 +10,7 @@ if(!empty($_FILES['file']['name'])){
    
     for($i=0;$i<$countfiles;$i++){
         $filename = $_FILES['file']['name'][$i];
-        move_uploaded_file($_FILES['file']['tmp_name'][$i],"../../images/galerie/".$filename);
+        move_uploaded_file($_FILES['file']['tmp_name'][$i],"../../upload/galerie/".$filename);
         $reqt = mysqli_query($connect,"INSERT INTO `img_galerie` (`id_img`, `id_galerie`, `images`) VALUES (NULL, '".$idgalr."', '$filename')");
     }
 

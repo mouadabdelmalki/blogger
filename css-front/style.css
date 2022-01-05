@@ -818,7 +818,9 @@ section.blog-section {
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     margin-bottom: 20px;
-    line-height: 20px; }
+    line-height: 20px; 
+    font-weight: 700;
+  }
 
 .sidebar .widget:last-child {
   margin-bottom: 0;
@@ -966,7 +968,7 @@ section.blog-section {
     background: #e5e5e5; }
   .sidebar .tags-widget ul.tags-list li a:hover {
     color: #ffffff;
-    background: #ff9900; }
+    background:#AC924E; }
 
 .sidebar .category-widget ul li {
   list-style: none;
@@ -980,10 +982,20 @@ section.blog-section {
     .sidebar .category-widget ul li a span {
       float: right; }
   .sidebar .category-widget ul li a:hover {
-    color: #ff9900; }
+    color: #AC924E; }
 
 .sidebar .category-widget ul li:last-child {
   margin-bottom: 0px; }
+
+  .sidebar .category-widget .category-btn-filter {
+    padding: 2px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #ac924ed1;
+    border: none;
+    color: white;
+    font-weight: 700;
+  } 
 
 /*------------------------------------------------- */
 /* =  About sections */
@@ -1420,7 +1432,7 @@ div.similar-box {
 /*------------------------------------------------- */
 #map {
   width: 100%;
-  height: 540px;
+  height: 350px;
   margin-bottom: 50px; }
 
 section.contact-section {

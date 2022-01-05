@@ -16,7 +16,7 @@
                     </ul>
                     <a class="navbar-brand m-auto" href="index.php">
                         <!-- <img src="images/logo.png" alt=""> -->
-                        <span class="title-logo">BLLOGER</span>
+                        <span class="title-logo">YOUSUF BLOG</span>
                     </a>
                     <ul class="navbar-link-header" style="margin: 0;">
                         <li><a class="active" href="index.php">ACCUEIL</a></li>

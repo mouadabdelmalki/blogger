@@ -28,7 +28,9 @@
 		<section class="contact-section">
 			<div class="container">
 				<div class="contact-box">
-					<div id="map"></div>
+				       <h1> Nous contacter </h1>
+					   <h3> Vous voulez entrer en contact ?
+Nous aimerions recevoir de vos nouvelles. </h3>
 					<form id="contact-form">
 						<div class="row">
 							<div class="col-md-4">
@@ -43,10 +45,10 @@
 							</div>
 						</div>
 					</form>
-					<p>Thank you for choosing our website. <br>
-					Please give us a ring for an informal chat to find out more about what we can offer your needs.<br>
-					Our phone number is: +44 (0)7882452461.<br>
-					And the address: Kim Young 39082, New Yersey, USA</p>
+					<div id="map"></div>
+					<p>Merci d'avoir choisi notre site Web.<br>
+					Veuillez nous appeler pour une discussion informelle pour en savoir plus sur ce que nous pouvons offrir à vos besoins.<br>
+					</p>
 				</div>
 			</div>
 		</section>

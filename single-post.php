@@ -39,7 +39,6 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
 	<link rel="stylesheet" href="css-front/cvbuilder-assets.min.css">
 	<link rel="stylesheet" type="text/css" href="css-front/style.css">
 </head>
@@ -65,10 +64,8 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 						<img src="'.$src.'" alt="">
 						<div class="post-content">
 							<div class="title-post">
-							
 								<h1>'.$art["titre"].'</h1>
 								<span>'.$art["auteur"].' •</span><span>'.$art["date_pub"].'</span>
-								
 							</div>
 							<p class="quote">'.$art["contenu"].'</p>
 							<!-- <div class="row">
@@ -169,6 +166,7 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
 					</div>
 					<!-- End contact form box -->
 				</div>
+				
 			</div>
 		</section>
 		<!-- End blog section -->

@@ -1,3 +1,101 @@
+<?php
+
+require_once 'configuration/config.php';
+
+
+
+$active_act = "active";
+
+
+
+
+
+$getArticleCategory = function ($idArticle) use ($connect) {
+
+    $categories= mysqli_query($connect,"select * from categories where id_cat = ".$idArticle);
+
+    return mysqli_fetch_row($categories);
+
+};
+
+
+
+$getCategoryArticles = function ($idCat) use ($connect) {
+
+    $result = [];
+
+    $categories= mysqli_query($connect,"select * from actualites where archive!='1' AND id_categorie = ".$idCat." order by date_pub desc ");
+
+
+
+    if($categories){
+
+        while($r=mysqli_fetch_array($categories)){
+
+            array_push($result, $r);
+
+        }
+
+    }
+
+
+
+    return $result;
+
+};
+
+
+
+
+
+
+
+
+
+$categories= mysqli_query($connect,"select * from categories");
+
+
+
+
+
+$dataArticles = [];
+
+$articles= mysqli_query($connect,"select * from actualites where archive!='1' order by date_pub desc ");
+
+while ($R=mysqli_fetch_array($articles))
+
+{
+
+    $R['_category'] = $getArticleCategory($R['id_article']);
+
+    array_push($dataArticles, $R);
+
+}
+
+
+
+$dataCategories = [];
+
+$categories= mysqli_query($connect,"select * from categories");
+
+while ($R=mysqli_fetch_array($categories))
+
+{
+
+
+
+    $R['_articles'] = $getCategoryArticles($R['id_cat']);
+
+    array_push($dataCategories, $R);
+
+}
+
+
+
+
+
+?>
+
 <!doctype html>
 
 
@@ -20,61 +118,7 @@
 	<div id="container">
 		<!-- Header
 		    ================================================== -->
-		<header class="clearfix">
-
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container">
-
-					<a href="#" class="open-menu"><i class="fa fa-align-justify"></i></a>
-
-					<a class="navbar-brand m-auto" href="index.html">
-						<img src="images/logo.png" alt="">
-					</a>
-
-					<a href="#" class="open-search"><i class="fa fa-search"></i></a>
-
-					<div class="fixed-vertical-header">
-						<a class="close-menu">
-							<span></span>
-							<span></span>
-						</a>
-						<div class="inner-fixed-vertical">
-							<a href="index.html"><img src="images/logo2.png" alt=""></a>
-							<div>
-								<ul class="navbar-nav">
-									<li><a href="index.html">Work</a>
-										<ul class="dropdown">
-											<li><a href="home-white-header.html">White Open Menu</a></li>
-										</ul>
-									</li>
-									<li><a href="about.html">About</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a class="active" href="blog.html">Blog</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</div>
-							<p>
-								587 Str. Norman Crook, New York, USA <br>
-								(414) 757-885<br>
-								info@yourdomain.com<br><br>
-
-								Powerded by Larabuilder<br>
-								All rights reserved 2017
-							</p>
-						</div>
-					</div>
-					<div class="search-area">
-						<a class="close-search">
-							<span></span>
-							<span></span>
-						</a>
-						<form class="search-form">
-							<input type="search" name="search-elem" id="search-elem" value="Search ..." />
-						</form>
-					</div>
-				</div>
-			</nav>
-		</header>
+		<?php include 'header.php' ?>
 		<!-- End Header -->
 
 		<!-- blog-section 
@@ -280,23 +324,7 @@
 
 		<!-- footer 
 			================================================== -->
-		<footer>
-			<ul class="social-icons">
-				<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-				<li><a class="github" href="#"><i class="fa fa-github-alt"></i></a></li>
-			</ul>
-			<p>
-				<span>587 Str. Norman Crook, New York, USA</span>
-				<span>(414) 757-885</span>
-				<span>info@yourdomain.com</span>
-			</p>
-			<p class="copyright-line">2018 CVbuilder. &copy; All Rights Reserved Nunforest</p>
-			<a href="#" class="go-top">
-				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-			</a>
-		</footer>
+		<?php  include 'footer.php' ?>
 		<!-- End footer -->
 
 	</div>

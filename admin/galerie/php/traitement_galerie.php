@@ -13,7 +13,7 @@ if(isset($_POST['add_gal'])){
     $ext = strtolower(substr($img['name'], -3));
     $ext1= strtolower(substr($img['name'], -4));
     if(in_array($ext, $allow_ext)or in_array($ext1,$allow_ext)){
-        $galerie_images= move_uploaded_file($img['tmp_name'], "../../../images/galerie/" . $img['name']);
+        $galerie_images= move_uploaded_file($img['tmp_name'], "../../../upload/galerie/" . $img['name']);
 
     } elseif (empty($galerie_images))
     {

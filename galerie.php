@@ -53,11 +53,12 @@ $i=1;
                         foreach($galerie as $R){
                         $images_gal = mysqli_query($connect,"SELECT * FROM img_galerie WHERE id_galerie IN (".$R["id_galerie"].")"); 
                         $img_g = "upload/galerie/".($R["image"]);
-                        $src = "upload/galerie/".($R["image"] ? $R["image"] : "gal.jpg");
-                        if(!file_exists($src)) $src = "upload/galerie/gal.jpg" ;
+                        $src1 = "upload/galerie/".( $R["image"] ? $R["image"] : "gal.jpg");
+                        if(!file_exists($src1)) $src1 = "upload/galerie/gal.jpg" ;
 						echo '
 					<div class="project-post">
-						<img src="'.$src.'" alt="" />
+						<img src="'.$src1.'" alt="" >
+						
 						<div class="hover-box">
 							<div class="inner-hover">
 								<h2><a href="single-project.html">Over Thinking</a></h2>
